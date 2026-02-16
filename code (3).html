@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Makina Worker Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e51a4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#121720",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- iOS Status Bar Spacer (Simulated) -->
+<div class="h-11 w-full bg-background-light dark:bg-background-dark sticky top-0 z-50"></div>
+<main class="max-w-md mx-auto px-5 pb-32">
+<!-- Header Section -->
+<header class="flex justify-between items-center mb-6">
+<div>
+<p class="text-primary/70 dark:text-primary/80 font-medium text-sm">Welcome back,</p>
+<h1 class="text-2xl font-bold tracking-tight">Hello, Operator</h1>
+</div>
+<button class="relative p-2 rounded-full bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<span class="material-icons text-primary">notifications</span>
+<span class="absolute top-2 right-2.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-800"></span>
+</button>
+</header>
+<!-- Search Bar -->
+<div class="relative mb-8">
+<span class="material-icons absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-white dark:bg-slate-800 border-none rounded-xl shadow-sm text-sm focus:ring-2 focus:ring-primary/20 font-display" placeholder="Search machines or documentation..." type="text"/>
+</div>
+<!-- Section Title -->
+<div class="flex items-center justify-between mb-5">
+<h2 class="text-lg font-bold">Training Modules</h2>
+<button class="text-primary text-sm font-semibold">View All</button>
+</div>
+<!-- Machine Cards Container -->
+<div class="space-y-6">
+<!-- Card 1: CNC Fiber Laser -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-video w-full bg-slate-100 dark:bg-slate-900 relative">
+<img alt="CNC Fiber Laser Cutting Machine" class="w-full h-full object-cover" data-alt="Modern industrial CNC fiber laser cutting machine in factory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3H6Vime22DjQZJsuiNDxl593vMZyHHeqYfTIEMirbzK0s-3cRxrXjszVS9hDNi0OZMtLZbrel1qsG64yjBcv3wJ2yuGFDN-hFqCNhZEK5NE1GorG7ZVaHLh7cV-8L09NhvpJ1TwhhbJNS57m0wfEEXDkd7HhfXINxwSJwqzzgY4h7bzbtXOjkwfd6xHwFlrokE5uq5Ls7DmH-aFS7toWEJzWHnLOL3G2LeQyASHak6UnKPTSNMHKm5-4uT7Aq3YBWUizyIz1sAg"/>
+<div class="absolute top-3 right-3 bg-green-500/90 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">
+                        Active
+                    </div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-1 leading-tight">CNC Fiber Laser Cutting Machine</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-5">Model: FL-3015 | Serial: #8829</p>
+<div class="flex gap-3">
+<button class="flex-1 py-3 px-4 rounded-lg border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+                            Start Learning
+                        </button>
+<button class="flex-1 py-3 px-4 rounded-lg bg-primary text-white font-bold text-sm hover:opacity-90 transition-opacity">
+                            Start Quiz
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 2: CO2 Laser -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-video w-full bg-slate-100 dark:bg-slate-900 relative">
+<img alt="CO2 Laser Cutting &amp; Engraving Machine" class="w-full h-full object-cover" data-alt="Industrial laser engraving machine with protective shield" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EZz6vpHYbBpZS0c_ndXdL39hWjkYAob5CcTz3i4OJuoaZRrv3VWgd7ZYYwT5JIHm3nIn7ZFq7Zin7EH94GaK2CNMcdSWXE-EszhSaprOdi5yq4DOT3rmyW_zIl2IR_q_TQpU8QRI1rsAnL80etfawLWBsJguctajd6hfJJsXi_WaeeBeyojW47P78puJu3Ynz-PWHiixejT2a-c4lyp0bv8KowsKVmRACRP8R7T6bLdk18HxRBTZYkJI7RBDbJGFE6qBx_Rtmw"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-1 leading-tight">CO2 Laser Cutting &amp; Engraving Machine</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-5">Model: CO2-XPro | Serial: #4412</p>
+<div class="flex gap-3">
+<button class="flex-1 py-3 px-4 rounded-lg border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+                            Start Learning
+                        </button>
+<button class="flex-1 py-3 px-4 rounded-lg bg-primary text-white font-bold text-sm hover:opacity-90 transition-opacity">
+                            Start Quiz
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 3: CNC Laser Tube -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-video w-full bg-slate-100 dark:bg-slate-900 relative">
+<img alt="CNC Laser Tube Cutting Machine" class="w-full h-full object-cover" data-alt="Heavy duty CNC laser tube cutting machinery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkvb8_zZ5avHYN3-DlPtW2SzhuUhXOWJkiElSDaEcDY9Oa-yCLvIiVCFOe8yDGZR65wqn40rQNZeKvMQLvjKPQJQqUnAR-nAeJOvzdr2ohLNBWAF3IzduetBnfpSS6OJD7bYj24W1QEa33518GOwjYmBq9CH8HznvxMUK_fi9KB2Ro6T2LZMJyJsUMrFAjNiVUeg45TJRVFFSqNj8GUOsatvUHD80eqFLRHWZN-LNJ-88EsCFcj5KsRKC1KY_MmTuZEK3Mp2rtPg"/>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-1 leading-tight">CNC Laser Tube Cutting Machine</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-5">Model: TubeMaster | Serial: #9901</p>
+<div class="flex gap-3">
+<button class="flex-1 py-3 px-4 rounded-lg border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+                            Start Learning
+                        </button>
+<button class="flex-1 py-3 px-4 rounded-lg bg-primary text-white font-bold text-sm hover:opacity-90 transition-opacity">
+                            Start Quiz
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 4: CNC Press Brake -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="aspect-video w-full bg-slate-100 dark:bg-slate-900 relative">
+<img alt="CNC Press Brake" class="w-full h-full object-cover" data-alt="Hydraulic CNC press brake metal forming machine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgOUb-QT835xo4cCRRinSdizJYKmHo47RJAH5aY1Pgui9ii3j8gGexgpLRhjI2_7DUsxazEwq1E2FGpvPTdAD732ktl_7rOCx7L1s11H0HzAJ0ehE-NrT-oP5i5Jf1NfTwofpdmPucX623Dveg5ewXd8n18ub-xsEHak1Z2-H4Py8yL-Sh6KB8yMFlO6KrZprvG64_88O-tZxrMUult-XOKReKylQDJ5jDCfTQljk1WluRHuYYTYxsSCL4R2EyZhXKmnD-FsFO5w"/>
+<div class="absolute bottom-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">
+                        New Content
+                    </div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold mb-1 leading-tight">CNC Press Brake</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-5">Model: HydroPress-90 | Serial: #2354</p>
+<div class="flex gap-3">
+<button class="flex-1 py-3 px-4 rounded-lg border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+                            Start Learning
+                        </button>
+<button class="flex-1 py-3 px-4 rounded-lg bg-primary text-white font-bold text-sm hover:opacity-90 transition-opacity">
+                            Start Quiz
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats / Gamification -->
+<div class="mt-8 mb-4 p-5 bg-primary/10 dark:bg-primary/20 rounded-xl border border-primary/20">
+<div class="flex items-center gap-4">
+<div class="bg-primary text-white p-3 rounded-lg">
+<span class="material-icons">emoji_events</span>
+</div>
+<div>
+<h4 class="font-bold text-sm">Certification Progress</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400">Complete 2 more quizes to become Senior Operator</p>
+</div>
+</div>
+<div class="mt-4 w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[65%]"></div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-6 py-3 pb-8 z-50">
+<div class="max-w-md mx-auto flex justify-between items-center">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-icons">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-icons">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Certify</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-icons">leaderboard</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Rank</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-icons">person</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</div>
+</nav>
+<!-- Home Indicator (iOS Simulated) -->
+<div class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1 bg-slate-300 dark:bg-slate-700 rounded-full z-[60]"></div>
+</body></html>

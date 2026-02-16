@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Makina - Worker Registration</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1E52A6",
+                        "background-light": "#F4F4F6",
+                        "background-dark": "#121720",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #1E52A6;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            min-height: 100dvh;
+        }
+        .ios-shadow {
+            box-shadow: 0 4px 6px -1px rgba(30, 82, 166, 0.15), 0 2px 4px -1px rgba(30, 82, 166, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col items-center font-display text-slate-800 dark:text-slate-100">
+<div class="h-10 w-full shrink-0"></div>
+<main class="flex-1 w-full max-w-md px-8 flex flex-col items-center">
+<div class="w-full flex flex-col items-center mb-10">
+<div class="relative w-32 h-24 mb-4 flex items-center justify-center">
+<svg class="w-full h-full drop-shadow-sm" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="metalGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#e2e8f0;stop-opacity:1"></stop>
+<stop offset="50%" style="stop-color:#cbd5e1;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#94a3b8;stop-opacity:1"></stop>
+</linearGradient>
+<clipPath id="arrowClip">
+<path d="M40 20 L140 20 L180 75 L140 130 L40 130 L80 75 Z"></path>
+</clipPath>
+</defs>
+<path d="M40 20 L140 20 L180 75 L140 130 L40 130 L80 75 Z" fill="#1E52A6"></path>
+<path d="M45 30 L135 30 L170 75 L135 120 L45 120 L75 75 Z" fill="url(#metalGrad)"></path>
+<g opacity="0.4" stroke="#1E52A6" stroke-width="0.5">
+<line x1="80" x2="80" y1="30" y2="120"></line>
+<line x1="110" x2="110" y1="30" y2="120"></line>
+<line x1="60" x2="150" y1="50" y2="50"></line>
+<line x1="65" x2="155" y1="100" y2="100"></line>
+</g>
+<g transform="translate(100, 75)">
+<circle cx="0" cy="0" fill="#1E52A6" r="12"></circle>
+<circle cx="0" cy="0" fill="#cbd5e1" r="5"></circle>
+<rect fill="#1E52A6" height="3" rx="1" transform="rotate(0)" width="28" x="-14" y="-1.5"></rect>
+<rect fill="#1E52A6" height="3" rx="1" transform="rotate(45)" width="28" x="-14" y="-1.5"></rect>
+<rect fill="#1E52A6" height="3" rx="1" transform="rotate(90)" width="28" x="-14" y="-1.5"></rect>
+<rect fill="#1E52A6" height="3" rx="1" transform="rotate(135)" width="28" x="-14" y="-1.5"></rect>
+</g>
+</svg>
+</div>
+<h1 class="text-3xl font-bold tracking-tight text-primary dark:text-white uppercase">
+                Makina
+            </h1>
+<p class="text-[10px] font-bold text-slate-400 dark:text-slate-500 tracking-[0.3em] uppercase mt-1">
+                New Worker Registration
+            </p>
+</div>
+<div class="w-full space-y-4">
+<div class="space-y-3">
+<div class="relative group">
+<label class="block text-[10px] font-bold text-primary mb-1 uppercase tracking-widest ml-1">
+                        Full Name
+                    </label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-slate-400 group-focus-within:text-primary transition-colors flex items-center">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</span>
+<input class="w-full h-12 pl-12 pr-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-xl focus:border-primary focus:ring-0 transition-all outline-none placeholder:text-slate-300 dark:placeholder:text-slate-600 text-sm font-medium" placeholder="First and Last Name" type="text"/>
+</div>
+</div>
+<div class="relative group">
+<label class="block text-[10px] font-bold text-primary mb-1 uppercase tracking-widest ml-1">
+                        Employee ID
+                    </label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-slate-400 group-focus-within:text-primary transition-colors flex items-center">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+<input class="w-full h-12 pl-12 pr-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-xl focus:border-primary focus:ring-0 transition-all outline-none placeholder:text-slate-300 dark:placeholder:text-slate-600 text-sm font-medium" placeholder="M-XXXXXX" type="text"/>
+</div>
+</div>
+<div class="relative group">
+<label class="block text-[10px] font-bold text-primary mb-1 uppercase tracking-widest ml-1">
+                        Department
+                    </label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-slate-400 group-focus-within:text-primary transition-colors flex items-center">
+<span class="material-symbols-outlined text-[20px]">factory</span>
+</span>
+<input class="w-full h-12 pl-12 pr-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-xl focus:border-primary focus:ring-0 transition-all outline-none placeholder:text-slate-300 dark:placeholder:text-slate-600 text-sm font-medium" placeholder="e.g. Assembly Line A" type="text"/>
+</div>
+</div>
+<div class="relative group">
+<label class="block text-[10px] font-bold text-primary mb-1 uppercase tracking-widest ml-1">
+                        Email Address
+                    </label>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-slate-400 group-focus-within:text-primary transition-colors flex items-center">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</span>
+<input class="w-full h-12 pl-12 pr-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-xl focus:border-primary focus:ring-0 transition-all outline-none placeholder:text-slate-300 dark:placeholder:text-slate-600 text-sm font-medium" placeholder="worker@factory.com" type="email"/>
+</div>
+</div>
+</div>
+<button class="w-full h-14 bg-primary hover:bg-[#16428a] text-white font-bold text-sm rounded-xl transition-all ios-shadow flex items-center justify-center space-x-2 active:scale-[0.98] mt-8 uppercase tracking-widest">
+<span>Create Account</span>
+<span class="material-symbols-outlined text-sm">how_to_reg</span>
+</button>
+<div class="flex justify-center items-center py-4">
+<a class="text-xs font-semibold text-slate-500" href="#">
+                    Already have an account? <span class="text-primary hover:underline underline-offset-4">Login</span>
+</a>
+</div>
+</div>
+</main>
+<footer class="w-full p-8 flex flex-col items-center space-y-4 shrink-0">
+<div class="text-center">
+<p class="text-[10px] text-slate-400 dark:text-slate-500 font-medium uppercase tracking-widest">
+                Makina Certification Systems v2.4.0
+            </p>
+<p class="text-[10px] text-slate-300 dark:text-slate-600 mt-1 uppercase tracking-tighter">
+                Secure Onboarding Module
+            </p>
+</div>
+<div class="h-1.5 w-32 bg-slate-200 dark:bg-slate-800 rounded-full mt-2"></div>
+</footer>
+<div class="fixed -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="fixed -bottom-24 -left-24 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+
+</body></html>

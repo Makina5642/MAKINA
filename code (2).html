@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Makina Safety Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e51a4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#121720",
+                        "surface-dark": "#1c222d",
+                        "success": "#22c55e",
+                        "error": "#ef4444",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+        .ios-status-bar {
+            height: env(safe-area-inset-top, 44px);
+        }
+        .ios-bottom-inset {
+            padding-bottom: env(safe-area-inset-bottom, 20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header & Progress -->
+<header class="bg-white dark:bg-surface-dark border-b border-slate-200 dark:border-slate-800 pt-10 px-6 pb-4 sticky top-0 z-10">
+<div class="flex items-center justify-between mb-4">
+<button class="p-2 -ml-2 text-slate-500">
+<span class="material-icons">arrow_back_ios</span>
+</button>
+<div class="text-center">
+<h1 class="text-xs font-bold uppercase tracking-widest text-primary mb-0.5">Hydraulic Press X2</h1>
+<p class="text-sm font-medium opacity-70">Safety Certification</p>
+</div>
+<div class="w-10"></div> <!-- Spacer for symmetry -->
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-sm font-bold">Question 2 of 5</span>
+<span class="text-xs font-medium opacity-60">40% Complete</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-2/5 rounded-full"></div>
+</div>
+</div>
+</header>
+<!-- Main Quiz Content -->
+<main class="flex-grow px-6 py-8 overflow-y-auto">
+<div class="mb-8">
+<div class="inline-flex items-center px-2 py-1 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase mb-3">
+<span class="material-icons text-xs mr-1">security</span>
+                Standard Procedure
+            </div>
+<h2 class="text-2xl font-bold leading-tight">
+                What is the first step before clearing a jam in the feeder mechanism?
+            </h2>
+</div>
+<div class="space-y-4">
+<!-- Option 1: Normal State -->
+<button class="w-full text-left p-5 rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark transition-all active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-sm font-bold shrink-0">A</div>
+<span class="text-lg font-medium">Use compressed air to blow out debris</span>
+</div>
+</button>
+<!-- Option 2: Selected State -->
+<button class="w-full text-left p-5 rounded-xl border-2 border-primary bg-primary/5 dark:bg-primary/10 transition-all active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-sm font-bold text-white shrink-0">B</div>
+<span class="text-lg font-medium text-primary dark:text-blue-400">Engage the Emergency Stop and Lockout/Tagout</span>
+</div>
+</button>
+<!-- Option 3: Incorrect/Error State Example -->
+<button class="w-full text-left p-5 rounded-xl border-2 border-error/50 bg-error/5 dark:bg-error/10 transition-all active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-error flex items-center justify-center text-sm font-bold text-white shrink-0">C</div>
+<span class="text-lg font-medium">Manual bypass the safety sensor</span>
+</div>
+</button>
+<!-- Option 4: Normal State -->
+<button class="w-full text-left p-5 rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark transition-all active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-sm font-bold shrink-0">D</div>
+<span class="text-lg font-medium">Alert the floor supervisor immediately</span>
+</div>
+</button>
+</div>
+<!-- Correct Feedback Example (Initially Hidden or Shown after Submit) -->
+<div class="mt-8 p-4 rounded-xl bg-success/10 border border-success/20 flex gap-4">
+<div class="w-10 h-10 rounded-full bg-success flex items-center justify-center shrink-0">
+<span class="material-icons text-white">check</span>
+</div>
+<div>
+<h4 class="font-bold text-success">Correct Answer</h4>
+<p class="text-sm opacity-80 mt-1 italic">"Always engage E-Stop first. Attempting to clear jams while the machine is live is the #1 cause of pinch-point injuries."</p>
+</div>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="p-6 bg-white dark:bg-surface-dark border-t border-slate-200 dark:border-slate-800 ios-bottom-inset">
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-5 rounded-xl text-lg shadow-lg shadow-primary/20 transition-all active:scale-95">
+                SUBMIT ANSWER
+            </button>
+<!-- Reference Link -->
+<button class="w-full text-center py-2 text-xs font-bold uppercase tracking-widest opacity-40 hover:opacity-100 flex items-center justify-center gap-1">
+<span class="material-icons text-sm">menu_book</span>
+                Review Safety Manual
+            </button>
+</div>
+</footer>
+<!-- Machine Image Context (Thumbnail) -->
+<div class="fixed top-24 right-4 w-16 h-16 rounded-lg overflow-hidden border-2 border-white dark:border-slate-700 shadow-xl rotate-3">
+<img alt="Industrial Machine" class="w-full h-full object-cover" data-alt="Heavy industrial hydraulic press in factory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk0qrG8BUQXqLedlFgXKh0puDrNHPMzLR1LMZC2hv0dFI7Oy6Y3zNZHevGl1v4zA18egB7dCT_uUCaKQ329_974B4qaXVugvY0z7aMAWc1rr9WHbVmALUlRZfFP6ioct2Soi6OznP6xB15po2kLPrQvg2yJAaV8hSmdv3mEwYRww6MyYpL-A6MGRdDnOi2ttkTnECrowvtrjiksUYOgqTCMn6beYmuG9zEo9-L2QPrZbCNYjobTsD_chuLDgRpjk7E4td0xZLEpg"/>
+</div>
+</body></html>
